@@ -6,7 +6,7 @@ public class Zone {
 	private Animal[] animal;
 	
 	public Zone (String nom, Animal[] animal) {
-		
+		super();
 		this.nom = nom;
 		this.animal = animal;
 	}

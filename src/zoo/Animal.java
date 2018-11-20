@@ -1,30 +1,44 @@
 package zoo;
 
-public class Animal {
+public abstract class Animal {
 	
-	private String nom;
-	private String type;
+	private String nom = null;
+	private String type = null;
+	private String regimeAlimentaire = null;
 	
-	public Animal (String nom, String type) {
-		
+	public static final String ALIMENT_CARNIVORE = "carnivore";
+	public static final String ALIMENT_HERBIVORE = "herbivore";
+	public static final String ALIMENT_OMNIVORE = "omnivore";
+	
+	public Animal (String nom, String type, String regimeAlimentaire) {
+		super();
 		this.nom = nom;
 		this.type = type;
+		this.regimeAlimentaire = regimeAlimentaire ;
 	}
 
-	public String getNom() {
+	protected String getNom() {
 		return nom;
 	}
 
-	public void setNom(String nom) {
+	protected void setNom(String nom) {
 		this.nom = nom;
 	}
 
-	public String getType() {
+	protected String getType() {
 		return type;
 	}
 
-	public void setType(String type) {
+	protected void setType(String type) {
 		this.type = type;
+	}
+
+	protected String getRegimeAlimentaire() {
+		return regimeAlimentaire;
+	}
+
+	protected void setRegimeAlimentaire(String regimeAlimentaire) {
+		this.regimeAlimentaire = regimeAlimentaire;
 	}
 	
 
