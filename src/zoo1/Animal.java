@@ -1,4 +1,4 @@
-package zoo;
+package zoo1;
 
 public abstract class Animal {
 	
@@ -40,6 +40,13 @@ public abstract class Animal {
 	protected void setRegimeAlimentaire(String regimeAlimentaire) {
 		this.regimeAlimentaire = regimeAlimentaire;
 	}
+
+	@Override
+	public String toString() {
+		return "Animal [nom=" + nom + ", type=" + type + ", regimeAlimentaire=" + regimeAlimentaire + "] ";
+	}
+	
+
 	
 
 }

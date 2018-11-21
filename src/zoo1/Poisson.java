@@ -1,4 +1,4 @@
-package zoo;
+package zoo1;
 
 public class Poisson extends Animal {
 
